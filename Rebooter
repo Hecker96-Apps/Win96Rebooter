@@ -8,13 +8,15 @@ class TestApplication extends WApplication {
     
     async main(argv) {
         super.main(argv);
-        
+        function reboot() {
+        window.location.reload();
+        }
         const mainwnd = this.createWindow({
             title: "My Application",
             icon: Theme.getIconUrl("exec", "small"),
             initialHeight: 400,
             initialWidth: 640,
-            body: "",
+            body: "<button onclick='reboot();'>Press to reboot.</button>",
             bodyClass: "very-cool-app",
             center: true,
             taskbar: true
