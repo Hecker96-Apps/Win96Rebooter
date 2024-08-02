@@ -14,7 +14,7 @@ class TestApplication extends WApplication {
             icon: Theme.getIconUrl("exec", "small"),
             initialHeight: 400,
             initialWidth: 640,
-            body: "<button onclick='reboot();'>Press to reboot.</button>",
+            body: "",
             bodyClass: "very-cool-app",
             center: true,
             taskbar: true
